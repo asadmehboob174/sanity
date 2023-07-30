@@ -5,10 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
-      
+      fontFamily: {
+        barlow: 'var(--font-barlow)',
+        inter: 'var(--font-inter)',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 }

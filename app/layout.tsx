@@ -1,8 +1,21 @@
+import Navbar from '@/components/Navbar';
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Barlow, Inter } from 'next/font/google'
+import Provider from '@/components/Provider';
 
-const inter = Inter({ subsets: ['latin'] })
+const barlow = Barlow({
+  subsets: ['latin'],
+  variable: "--font-barlow",
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
+
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: "--font-inter",
+});
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +28,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} font-inter bg-white text-black dark:bg-[#090908] dark:text-white h-full 
+      selection:bg-gray-50 dark:selection:bg-gray-800`}>
+        <Provider>
+          <Navbar />
+        <div className={`max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4`}>
+          {children}
+        </div>
+         </Provider>
+        </body>
     </html>
   )
 }
