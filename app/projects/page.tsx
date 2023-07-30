@@ -1,5 +1,5 @@
 import Heading from '@/components/Heading'
-import { client } from '@/lib/sanity'
+import { client} from '@/lib/sanity'
 import Image from 'next/image'
 import React from 'react'
 
