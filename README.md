@@ -33,6 +33,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-https://sanity-gray-kappa.vercel.app/guestbook
+https://sanity-gray-kappa.vercel.app
 
-https://nextjs-sanity-studio.sanity.studio/desk
+https://nextjs-sanity-studio.sanity.studio
