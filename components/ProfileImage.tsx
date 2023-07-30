@@ -1,5 +1,5 @@
 import React from 'react';
-import profileimage from "@/public/profile-pic.png"
+import profileimage from "@/public/asadmehboob.jpg"
 import Image from 'next/image';
 
 const ProfileImage = () => {
